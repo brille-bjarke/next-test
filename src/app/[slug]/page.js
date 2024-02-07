@@ -4,8 +4,7 @@ import Footer from "../../components/footer"
 
 export default function Project({ params }) {
 	return (
-		<main className="flex flex-col justify-between p-4">
-			<Header title="Page title"/>
+		<>
 			
 			<div className="py-12">
 				<h1 className="text-3xl mb-4">Page [SLUG: {params.slug}]</h1>
@@ -14,9 +13,6 @@ export default function Project({ params }) {
 				<p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus a sem. Nullam quis massa sit amet nibh viverra malesuada. Nunc sem lacus, accumsan quis, faucibus non, congue vel, arcu. Ut scelerisque hendrerit tellus. Integer sagittis. Vivamus a mauris eget arcu gravida tristique. Nunc iaculis mi in ante. Vivamus imperdiet nibh feugiat est.</p>
 			</div>
 
-			<Footer>
-				<p>Footer</p>
-			</Footer>
-		</main>
+		</>
 	);
 }

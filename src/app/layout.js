@@ -1,3 +1,6 @@
+import Header from "../components/header"
+import Footer from "../components/footer"
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -12,7 +15,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				{children}
+				<main className="flex flex-col justify-between p-4">
+					<Header title="Page title"/>
+					{children}
+					<Footer>
+						<p>Footer</p>
+					</Footer>
+				</main>
 			</body>
 		</html>
 	);
