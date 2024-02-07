@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Header from "../../components/header"
 import Footer from "../../components/footer"
 import Projects from "../../components/projects"
 
-export default function Projects() {
+export default function ProjectsPage() {
 	return (
 		<main className="flex flex-col justify-between p-4">
 			<Header title="Page title"/>
